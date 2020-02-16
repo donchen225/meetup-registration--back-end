@@ -39,8 +39,7 @@ exports.getOne = (req, res) => {
 
 exports.updateOne = (req, res) => {
   const {id} = req.params;
-  const {data} = req.body;
-  Attendee.updateOne({attendeeId: Number(id), data}, (error, results) => {
+  Attendee.updateOne({attendeeId: Number(id), req.body}, (error, results) => {
     if (error) {
       res.status(400).end();
       console.log(error);
