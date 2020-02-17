@@ -12,12 +12,13 @@ app.use(express.static(path.join(__dirname, '../client/public')));
 
 // const dontUseMe = () => throw new Error('implement controllers');
 
+app.get('/attendees/:id', controller.getOne);
 app.get('/attendees', controller.getAll);
 app.post('/attendees', controller.addOne);
-app.get('/attendees/:id', controller.getOne);
 app.put('/attendees/:id', controller.updateOne);
-app.delete('/attendees', controller.deleteAll);
+app.patch('/attendees/:id', controller.updateOnePart);
 app.delete('/attendees/:id', controller.deleteOne);
+app.delete('/attendees', controller.deleteAll);
 
 const PORT = process.env.PORT || 3000;
 
