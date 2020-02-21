@@ -5,12 +5,12 @@ Build the back-end of a single page app that allows a meetup organizer to regist
 
 ## Setup
 
-- [ ] `npm install`
-- [ ] `npm run react:compile` to compile the client bundle
+- [x] `npm install`
+- [x] `npm run react:compile` to compile the client bundle
 
 ## Requirements
 
-- [ ] Complete the mongoose schema for an `Attendee`. The client already expects the following data shape:
+- [x] Complete the mongoose schema for an `Attendee`. The client already expects the following data shape:
 
 | Field          | Type            | Notes                                       |
 |----------------|-----------------|---------------------------------------------|
@@ -18,11 +18,11 @@ Build the back-end of a single page app that allows a meetup organizer to regist
 | lastName       | string          |                                             |
 | email          | string          |                                             |
 | shirt          | string          | one of `XS`, `S`, `M`, `L`, `XL`, `XXL`     |
-| skillLevel     | string          | one of `beginner`, `intermediate`, `expert` | 
+| skillLevel     | string          | one of `beginner`, `intermediate`, `expert` |
 
 **Note: think about what types of constraints or validation these fields would benefit from**
 
-- [ ] Complete the controllers to service the provided routes:
+- [x] Complete the controllers to service the provided routes:
 
 | Endpoint          | Type   | Operation                 |
 |-------------------|--------|---------------------------|

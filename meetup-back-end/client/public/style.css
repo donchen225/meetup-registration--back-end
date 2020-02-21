@@ -62,7 +62,7 @@ input:focus {
   border-bottom:2px solid #2a79a7;
 }
 
-button {
+.register-button {
   float:right;
   padding:8px 12px;
   margin: 50px 0px 0px 0px;

@@ -49,7 +49,8 @@ class AttendeeForm extends React.Component {
           <option value="intermediate">intermediate</option>
           <option value="expert">expert</option>
         </select>
-        <button onClick={this.submitForm}>REGISTER</button>
+        <button className="register-button" onClick={this.submitForm}>REGISTER</button>
+        
       </div>
     );
   }
